@@ -1,8 +1,27 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
-## sample-1: 001_DrugBank_1380036.gjf in [biomed-QCdriver/examples_biomed]
+```
+  %nproc=[NPROC]                          # Number of computational CPUs
+  %mem=[MEM]                              # MEMORY for Gaussian   
+  %chk=[NAME].chk                         # Checkpoint file for further analysis    
+  #[Detailed computational parameters]    # So many parameters, we need to gradually encounter them
+
+  [Something you want to write]
+
+  [Nele]  [Nspin]                         # Nele : Number of extra electron(s)  (From SDF/PDB/OpenBabel or user assigned)    Nspin : Spin multiplicity Nspin=2S+1 (From SDF/PDB/OpenBabel or user assigned)
+  [XYZ]
+  [XYZ]
+   ... 
+  [XYZ]
+  [XYZ]
+  [One blank line!!!]
+```  
   
+## sample-1: 001_DrugBank_1380036.gjf in [biomed-QCdriver/examples_biomed]    
+  -- Normal DFT calculations for drug molecules --
+  
+ 
 ```
   %nproc=24                   # Number of computational CPUs
   %mem=1000mw                 # MEMORY for Gaussian, 1000mw equal to 8000MB (~8G). It can be the default value   
