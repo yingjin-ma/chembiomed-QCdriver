@@ -1,0 +1,14 @@
+#P TEST CID/4-31G scf=conventional
+
+Gaussian Test Job 13
+WATER CID/4-31G//HF/6-31G*
+
+0,1
+O
+H,1,ROH
+H,1,ROH,2,HOH
+
+ROH=0.94734
+HOH=105.49542
+
+

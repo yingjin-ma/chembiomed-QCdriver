@@ -1,0 +1,22 @@
+#P TEST  HF/STO-3G OPT=(CALCFC,TS)
+
+Gaussian Test Job 23
+H2CO TO H2 + CO TS SEARCH
+
+0,1
+O
+C,1,RCO
+X,2,1.,1,90.
+X,2,RCHH,3,THETA1,1,180.,0
+X,4,1.,2,90.,3,0.,0
+X,4,1.,5,THETA2,3,0.,0
+H,4,RH,6,90.,3,0.,0
+H,4,RH,6,90.,3,180.,0
+
+RCO        1.2
+THETA2    68.8
+THETA1    37.0
+RCHH       1.2
+RH         0.56
+
+

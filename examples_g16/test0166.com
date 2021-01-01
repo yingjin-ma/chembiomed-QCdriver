@@ -1,0 +1,29 @@
+#p scf=(tight,novaracc) uhf/6-31g* pop=nbodel test
+
+Gaussian Test Job 166:
+UHF/6-31G* OO..HF
+
+ 0 3
+F
+H 1 0.911
+X 1 1.0 2 90.000
+X 1 R 3 GAMMA 2 0.0
+X 4 1.0 1 90.000 3 0.0
+O 4 0.584 5 BETA 3 0.0
+X 4 1.0 6 90.000 5 180.0
+O 4 0.584 7 90.000 6 180.0
+
+R     3.950
+BETA  90.000
+GAMMA 90.000
+
+  $nbo $end
+  $del
+  A ZERO 1 DELOC  FROM 1 TO 2
+  B ZERO 1 DELOC  FROM 1 TO 2
+  A ZERO 1 DELOC  FROM 2 TO 1
+  B ZERO 1 DELOC  FROM 2 TO 1
+  A ZERO 2 DELOC  FROM 1 TO 2     FROM 2 TO 1
+  B ZERO 2 DELOC  FROM 1 TO 2     FROM 2 TO 1
+  $end
+

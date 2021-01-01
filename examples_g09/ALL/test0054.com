@@ -1,0 +1,56 @@
+#P test MP2/6-31G* force
+
+Gaussian Test Job 54 (Part 1):
+ETHYL RADICAL UHF TEST 36 6-31G* MP2 GRADIENTS
+
+0 2
+C1
+C2 C1 CC
+H1 C1 CH C2 T
+H2 C1 CH C2 T H1 T 1
+H3 C2 CH C1 T H1 180.
+H4 C2 CH C1 T H3 120.
+H5 C2 CH C1 T H3 240.
+
+CC 1.54
+CH 1.09
+T 109.471221
+
+--Link1--
+#P test MP2/6-31G* force iop(9/8=20,9/16=-2)
+
+Gaussian Test Job 54 (Part 2):
+ETHYL RADICAL UHF TEST 36 6-31G* MP2 GRADIENTS (quartic out of core)
+
+0 2
+C1
+C2 C1 CC
+H1 C1 CH C2 T
+H2 C1 CH C2 T H1 T 1
+H3 C2 CH C1 T H1 180.
+H4 C2 CH C1 T H3 120.
+H5 C2 CH C1 T H3 240.
+
+CC 1.54
+CH 1.09
+T 109.471221
+
+--Link1--
+#P test MP2/6-31G* force iop(9/8=30,9/16=-2)
+
+Gaussian Test Job 54 (Part 3):
+ETHYL RADICAL UHF TEST 36 6-31G* MP2 GRADIENTS (quintic out of core)
+
+0 2
+C1
+C2 C1 CC
+H1 C1 CH C2 T
+H2 C1 CH C2 T H1 T 1
+H3 C2 CH C1 T H1 180.
+H4 C2 CH C1 T H3 120.
+H5 C2 CH C1 T H3 240.
+
+CC 1.54
+CH 1.09
+T 109.471221
+

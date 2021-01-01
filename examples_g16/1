@@ -1,0 +1,111 @@
+From frisch Wed Feb 11 11:13:47 2009
+Return-Path: <amber-bounces@ambermd.org>
+X-Original-To: frisch@gaussian.com
+Delivered-To: frisch@mailsrv.lorentzian.com
+Received: from localhost (mailgw.lorentzian.com [193.0.80.6])
+	by mailsrv.lorentzian.com (Postfix) with ESMTP id 26CADC9E5
+	for <frisch@gaussian.com>; Wed, 11 Feb 2009 10:56:52 -0500 (EST)
+Received: from sentry.cshore.com (206.123.82.221) by mailgw1
+X-ASG-Debug-ID: 1234368272-0fa601f20000-VLLf8E
+X-Barracuda-URL: http://206.123.82.221:8000/cgi-bin/mark.cgi
+Received: from amber.sdsc.edu (localhost [127.0.0.1])
+	by sentry.cshore.com (Spam Firewall) with ESMTP id 95373E3FE78
+	for <frisch@gaussian.com>; Wed, 11 Feb 2009 11:04:32 -0500 (EST)
+Received: from amber.sdsc.edu (amber.sdsc.edu [192.31.21.165]) by sentry.cshore.com with ESMTP id ZdPSSCng81Ag2roN for <frisch@gaussian.com>; Wed, 11 Feb 2009 11:04:32 -0500 (EST)
+Received: from localhost ([127.0.0.1] helo=amber.sdsc.edu)
+	by amber.sdsc.edu with esmtp (Exim 4.43)
+	id 1LXHZa-0000jl-MD; Wed, 11 Feb 2009 08:04:26 -0800
+Received: from mccmsi.jsums.edu ([143.132.33.130] helo=mail.ccmsi.us)
+	by amber.sdsc.edu with esmtp (Exim 4.43) id 1LXHZY-0000jg-WF
+	for amber@ambermd.org; Wed, 11 Feb 2009 08:04:25 -0800
+Received: from 134.164.164.206 with HTTP
+	by webserver mail.ccmsi.us (143.132.33.130) ;
+	Wed, 11 Feb 2009 10:04:24 CST
+Date: Wed, 11 Feb 2009 10:04:24 -0600
+Message-Id: <200902111004.AA590014@mail.ccmsi.us>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: "Jason A. Ford-Green" <jgreen@ccmsi.us>
+X-Sender: <jgreen@ccmsi.us>
+To: AMBER Mailing List <amber@ambermd.org>
+X-ASG-Orig-Subj: Re: [AMBER] Solvating the interior of a channel
+Subject: Re: [AMBER] Solvating the interior of a channel
+X-Mailer: <IMail v8.22>
+X-BeenThere: amber@ambermd.org
+X-Mailman-Version: 2.1.5
+Precedence: list
+Reply-To: jgreen@ccmsi.us, AMBER Mailing List <amber@ambermd.org>
+List-Id: AMBER Mailing List <amber.ambermd.org>
+List-Unsubscribe: <http://lists.ambermd.org/mailman/listinfo/amber>,
+	<mailto:amber-request@ambermd.org?subject=unsubscribe>
+List-Archive: <http://lists.ambermd.org/mailman/private/amber>
+List-Post: <mailto:amber@ambermd.org>
+List-Help: <mailto:amber-request@ambermd.org?subject=help>
+List-Subscribe: <http://lists.ambermd.org/mailman/listinfo/amber>,
+	<mailto:amber-request@ambermd.org?subject=subscribe>
+Sender: amber-bounces@ambermd.org
+Errors-To: amber-bounces@ambermd.org
+X-Barracuda-Connect: amber.sdsc.edu[192.31.21.165]
+X-Barracuda-Start-Time: 1234368272
+X-Barracuda-Virus-Scanned: by Cybershore Spam Sentry at cshore.com
+X-Barracuda-Spam-Score: 0.00
+X-Barracuda-Spam-Status: No, SCORE=0.00 using per-user scores of TAG_LEVEL=2.0 QUARANTINE_LEVEL=4.0 KILL_LEVEL=7.0 tests=
+X-Barracuda-Spam-Report: Code version 3.2, rules version 3.2.1.17546
+	Rule breakdown below
+	 pts rule name              description
+	---- ---------------------- --------------------------------------------------
+Content-Length: 1464
+Lines: 51
+
+
+ I have never used the plugin, but I see VMD has a script called Dowser that, like the below two programs, finds cavities and solvates them considering energetically favorable solvation states.  Hope this helps!
+
+Cheers,
+
+Jason Ford-Green
+
+---------- Original Message ----------------------------------
+From: Shozeb Haider <shozeb.haider@pharmacy.ac.uk>
+Reply-To: AMBER Mailing List <amber@ambermd.org>
+Date:  Wed, 11 Feb 2009 13:15:07 +0000
+
+>Try looking at the programs VOIDOO (looks for cavities) and FLOOD
+>(floods the cavities with solvent).
+>
+>Best wishes
+>
+>Shozeb
+>
+>
+>
+>Daniel Smith wrote:
+>> Hello,
+>>
+>> I am currently running Amber 9 but also have access to Amber 10 if need be.
+>> I have a channel protein that I am trying to simulate in vacuo. However, I
+>> would like to solvate the interior of the channel. How might I go about
+>> doing this other than placing the waters in there individually? I have tried
+>> solvating the protein, but that gives me thousands of unnecessary waters.
+>>
+>> Thank you,
+>> Daniel Smith
+>> _______________________________________________
+>> AMBER mailing list
+>> AMBER@ambermd.org
+>> http://lists.ambermd.org/mailman/listinfo/amber
+>>
+>>
+>
+>
+>_______________________________________________
+>AMBER mailing list
+>AMBER@ambermd.org
+>http://lists.ambermd.org/mailman/listinfo/amber
+>
+
+
+_______________________________________________
+AMBER mailing list
+AMBER@ambermd.org
+http://lists.ambermd.org/mailman/listinfo/amber
+

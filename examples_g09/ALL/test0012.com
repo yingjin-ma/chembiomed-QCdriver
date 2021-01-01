@@ -1,0 +1,16 @@
+#P TEST MP4SDTQ/6-31G* scf=conventional
+
+Gaussian Test Job 12
+AMMONIA MP4SDTQ/6-31G*//HF/6-31G*
+
+0,1
+N
+X,1,1.
+H,1,R,2,TH
+H,1,R,2,TH,3,120.,0
+H,1,R,2,TH,3,-120.,0
+
+R=1.00249
+TH=111.64892
+
+

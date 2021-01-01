@@ -1,0 +1,19 @@
+#P NONSTD OLDCONSTANTS
+1//1;
+2//2;
+3/5=1,6=6,7=1,11=0,25=14/1,2,3,11,14;
+4//1;
+5/6=7/2;
+6//1;
+
+Gaussian Test Job 07
+WATER 6-31G* STANDARD MODEL.
+
+0 1
+O
+H 1 0.96
+H 1 0.96 2 109.471221
+
+
+
+

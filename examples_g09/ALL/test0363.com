@@ -1,0 +1,53 @@
+%chk=test0363
+#p ump2=full/6-31+g* density=curr test iop(6/51=-1)
+ 
+Gaussian Test Job 363 (Part 1):
+pyridine EKT, all states
+ 
+1,2
+C
+X,1,1.00000
+C,1,C2C1,2,C2CX
+X,3,1.00000,1,90.00000,2,180.00000,0
+N,3,NC,4,NCX,2,180.00000,0
+C,1,CCB,3,C3C1C,2,180.00000,0
+H,6,HC3,1,HCCB,3,0.00000,0
+C,6,C4C3,1,CC3C1,3,CCC1C2,0
+C,6,C4C3,1,CC3C1,3,-CCC1C2,0
+X,8,1.00000,6,XCC3,1,180.00000,0
+H,8,HSC,10,HSCX,6,HSCXC3,0
+H,8,HAC,10,HACX,6,HACXC3,0
+X,9,1.00000,6,XCC3,1,180.00000,0
+H,9,HSC,13,HSCX,6,-HSCXC3,0
+H,9,HAC,13,HACX,6,-HACXC3,0
+ 
+C2C1=1.42806
+NC=1.13693
+CCB=1.47715
+HC3=1.06946
+C4C3=1.48327
+HSC=1.08015
+HAC=1.07695
+C2CX=51.19814
+NCX=90.25037
+C3C1C=130.63830
+HCCB=128.70023
+CC3C1=60.65754
+HSCX=55.87337
+HACX=58.70328
+XCC3=150.45963
+CCC1C2=-119.00467
+HSCXC3=-91.50518
+HACXC3=90.03050
+ 
+--Link1--
+%chk=test0363
+%nosave
+#p ump2=full/6-31+g* density=current guess=read geom=check test iop(6/51=10)
+! density=check guess=only 
+
+Gaussian Test Job 363 (Part 2)
+Pyridine EKT reading data from chk file
+
+1,2
+

@@ -1,0 +1,46 @@
+%chk=test0104
+%kjob l301 4
+#P rhf/sto-3g LST 
+ 
+Gaussian Test Job 104:
+CH2=NH --> CH=NH2 LST with restart
+ 
+0,1
+C
+N,1,AB
+H,1,AH3,2,H3AB
+H,1,AH0,2,BAH0,3,180.,0
+H,2,BH6,1,ABH6,3,0.,0
+ 
+AB=1.27286
+AH0=1.08887
+AH3=1.09088
+BH6=1.04827
+BAH0=119.12014
+H3AB=125.41187
+ABH6=109.1188
+ 
+H2NCH SINGLET (PLANAR) CS STO-3G OPTIMIZATION
+ 
+0,1
+N
+C,1,AB
+H,1,AH0,2,BAH0
+H,1,AH3,2,H3AB,3,Dih1,0
+H,2,BH6,1,ABH6,3,Dih2,0
+ 
+AB=1.33884
+AH0=1.0226
+AH3=1.02571
+BH6=1.11944
+BAH0=120.1088
+H3AB=126.83121
+ABH6=103.68327
+Dih1=180.0
+Dih2=180.0
+ 
+--Link1--
+%chk=test0104
+%nosave
+#P rhf/sto-3g LST=restart guess=always
+ 

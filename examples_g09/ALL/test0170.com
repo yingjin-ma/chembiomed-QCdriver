@@ -1,0 +1,51 @@
+%chk=test0170
+#P freq=noraman NOSYMM TEST uhf
+
+Gaussian Test Job 170 (Part 1):
+CH3+DH-->CH3D+H frequencies
+
+0 2
+C
+H 1 CH1
+X 2 1.0 1 90.0
+H 2 HH 3 90.0 1 180.0
+H 1 CH2 2 HCH 3 0.0
+H 1 CH2 2 HCH 3 120.0
+H 1 CH2 2 HCH 3 -120.0
+
+CH1 1.302
+HH 0.915
+CH2 1.083
+HCH 106.5
+
+--Link1--
+%chk=test0170
+%nosave
+#P IRC=(STEPSIZE=5,READCARTESIANFC,READISOTOPES,MAXPOINTS=2)
+NOSYMM TEST uhf iop1=synch
+
+Gaussian Test Job 170 (Part 2):
+TEST CH3+DH-->CH3D+H Euler path (MWIC) AT STO-3G LEVEL
+
+0 2
+C
+H 1 CH1
+X 2 1.0 1 90.0
+H 2 HH 3 90.0 1 180.0
+H 1 CH2 2 HCH 3 0.0
+H 1 CH2 2 HCH 3 120.0
+H 1 CH2 2 HCH 3 -120.0
+
+CH1 1.302
+HH 0.915
+CH2 1.083
+HCH 106.5
+
+0.0 0.0 1.0
+12
+2
+1
+1
+1
+1
+

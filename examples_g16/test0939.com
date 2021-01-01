@@ -1,0 +1,10 @@
+#p cas(6,6)/6-31g(d,p) 5d 7f test opt=tight int=readb extralink=l112 
+
+Gaussian Test Job 939:
+methylene 1-a1 6x6 CAS SCVS
+
+0,1
+C  0.0887171875  0.1397204509  0.0729176599
+H -0.7841451051  0.1319336293 -0.6444977219
+H  0.2518419742 -0.9702563446  0.2069917576
+
