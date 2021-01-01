@@ -1,6 +1,8 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
+  Gaussian templete (basic; no link)
+
 ```
   %nproc=[NPROC]                          # Number of computational CPUs
   %mem=[MEM]                              # MEMORY for Gaussian   
