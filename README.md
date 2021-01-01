@@ -1,6 +1,39 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
+## sample-1: 001_DrugBank_1380036.gjf in [biomed-QCdriver/examples_biomed]
+  
+```
+  %nproc=24                   # Number of computational CPUs
+  %mem=1000mw                 # MEMORY for Gaussian, 1000mw equal to 8000MB (~8G). It can be the default value   
+  %chk=1380036.chk            # Checkpoint file for further analysis. The [name] in [name].chk can be better identical to [name].gjf    
+  #p M06-2x/6-31G* pop=full   # The "p" (detailed output) should better be kept at this stage; Default [DFT/BASIS] can be M06-2x/6-31G*； The "pop=full" can be used at this stage (for printing out molecular orbitals) 
+
+  scaling check
+
+  0  1
+  C           0.91510         0.04080         0.09480
+  C           0.47710         1.11240         1.06040
+  N          -0.10060         0.67510         2.14490
+  C          -0.58220         1.45040         3.16980
+  O          -1.17930         1.03820         4.13030
+  S          -0.29060         3.27040         3.12640
+  C           0.45400         3.48740         1.59460
+  C           0.74220         2.49900         0.71050
+  C           1.38180         2.81270        -0.60540
+  C           0.56110         2.88150        -1.87840
+  C           1.17370         4.13130        -1.30450
+  H           0.45360         0.18900        -0.88680
+  H           0.64010        -0.93660         0.48900
+  H           1.99980         0.07660        -0.06040
+  H           0.69780         4.52030         1.36540
+  H           2.37130         2.37830        -0.73200
+  H           0.98290         2.45910        -2.78370
+  H          -0.51390         2.76750        -1.78740
+  H           0.50060         4.85620        -0.86030
+  H           2.02340         4.57330        -1.81240
+  
+```
 
 
 # 背景如下(仅供参考的背景讨论，非执行标准)
