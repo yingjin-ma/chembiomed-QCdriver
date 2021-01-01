@@ -3,7 +3,7 @@ Quantum Chemical full process for BIOMED platform
 
 
 
-# 背景如下
+# 背景如下(仅供参考的背景讨论，非执行标准)
 
 ## 需求： 用户给定分子结构等信息，通过指定计算的性质，由平台进行计算后返回给最终用户。
 ## 计算性质：（用户选择）
