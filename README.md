@@ -1,6 +1,19 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
+## Expert System consideration v20200103   
+
+  #### Default computational software 
+    -- Energy  ==> Gaussian 
+    -- Orbital ==> Gaussian
+
+  #### Default computational level (for functional and basis)
+    -- Super saving or ECO mode :  PBE/STO-3G/DF
+    -- [default] Normal mode:  M06-2x/6-31g
+    -- High accuracy mode:  wB97xd/6-31+G*
+
+## Templete of Gaussian
+
   Gaussian templete (basic; no link)
 
 ```
@@ -19,11 +32,7 @@ Quantum Chemical full process for BIOMED platform
   [XYZ]
   [One blank line!!!]
 ```  
-## Expert System consideration v20200103   
-  #### Default computational level (for functional and basis)
-    -- Super saving or ECO mode :  PBE/STO-3G/DF
-    -- [default] Normal mode:  M06-2x/6-31g
-    -- High accuracy mode:  wB97xd/6-31+G*
+
 
 ## sample-1: 001_DrugBank_1380036.gjf in [biomed-QCdriver/examples_biomed]    
   -- Normal DFT calculations for drug molecules --
