@@ -1,11 +1,18 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
-## Expert System consideration v20200103   
+## Expert System consideration v20200106   
 
   #### Default computational software 
-    -- Energy  ==> Gaussian 
-    -- Orbital ==> Gaussian
+| Utility | ---- | QC package | ---- | Keywords | ---- | Level |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Energy  | ==> | Gaussian | ==> | functional/basis | == | Essential | 
+| Orbital | ==> | Gaussian | ==> | pop=full | == |  | 
+| Geometry optimization | ==> | Gaussian | ==> | opt | == |  | 
+| Searching transition structure | ==> | Gaussian | ==> | opt=ts | == |  |
+|Vibrational frequencies| ==> | Gaussian | ==> | freq | == |  | 
+|Excited states| ==> | Gaussian | ==> | td | == |  |
+
 
   #### Default computational level (for functional and basis)
     -- Super saving or ECO mode :  PBE/STO-3G/DF
@@ -14,7 +21,8 @@ Quantum Chemical full process for BIOMED platform
 
 ## Templete of Gaussian
 
-  Gaussian templete (basic; no link)
+  Gaussian templete (basic; no link)  
+  More about Gaussian input : https://gaussian.com/input/?tabid=0
 
 ```
   %nproc=[NPROC]                          # Number of computational CPUs
