@@ -15,7 +15,7 @@ Quantum Chemical full process for BIOMED platform
 
 
   #### Default computational level (for functional and basis)
-    -- Super saving or ECO mode :  PBE/STO-3G/DF
+    -- Super saving or ECO mode :  PBE/STO-3G/Fit
     -- [default] Normal mode:  M062x/6-31g*
     -- High accuracy mode:  wB97xd/6-31+G*
 
