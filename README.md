@@ -16,7 +16,7 @@ Quantum Chemical full process for BIOMED platform
 
   #### Default computational level (for functional and basis)
     -- Super saving or ECO mode :  PBE/STO-3G/DF
-    -- [default] Normal mode:  M06-2x/6-31g
+    -- [default] Normal mode:  M062x/6-31g*
     -- High accuracy mode:  wB97xd/6-31+G*
 
 ## Templete of Gaussian
@@ -50,7 +50,7 @@ Quantum Chemical full process for BIOMED platform
   %nproc=24                   # Number of computational CPUs
   %mem=1000mw                 # MEMORY for Gaussian, 1000mw equal to 8000MB (~8G). It can be the default value   
   %chk=1380036.chk            # Checkpoint file for further analysis. The [name] in [name].chk can be better identical to [name].gjf    
-  #p M06-2x/6-31G* pop=full   # The "p" (detailed output) should better be kept at this stage; Default [DFT/BASIS] can be M06-2x/6-31G*； The "pop=full" can be used at this stage (for printing out molecular orbitals) 
+  #p M062x/6-31G* pop=full   # The "p" (detailed output) should better be kept at this stage; Default [DFT/BASIS] can be M06-2x/6-31G*； The "pop=full" can be used at this stage (for printing out molecular orbitals) 
 
   scaling check
 
