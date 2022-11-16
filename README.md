@@ -1,6 +1,19 @@
 # biomed-QCdriver
 Quantum Chemical full process for BIOMED platform
 
+## 2022年11月16日更新 ## 
+
+数据库相关
+1. DFT、MP2计算结果数据库，可用于机时预测、后续的性质预测；推荐李天颜主导
+   a. 数据库分类,可分别按照体系大小、药物小分子、氨基酸残基进行分类构建
+   b. 注意不同的分类会有重叠
+2. CASSCF、DMRG等多组态/多参考计算数据库
+   a. 1,2-dioxetonane小分子体系、TDO-、FDO-体系
+   b. Eu-BTBP体系
+   c. 轨道系数矩阵为主的数据存储
+
+
+
 ## Expert System consideration v20200106   
 
   #### Default computational software 
