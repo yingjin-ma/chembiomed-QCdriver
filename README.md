@@ -1,5 +1,9 @@
-# chembiomed platform
-Quantum Chemical full process for CHEMBIOMED platform
+# Readme sections
+
+
+# Discussions sections
+    -- Discussions for chembiomed platform
+    -- Quantum Chemical full process for CHEMBIOMED platform
 
 ## 2023.1.6更新
 
