@@ -1,7 +1,47 @@
 # Readme 
+
+## data_gaussian storage
+
+ - **data_gaussian 目录下**
+   - **机时预测所用的计算结果（ACSOmega2021）**
+     - _media_yingjin_51ad96af-a542-4f7a-9b9c-13075136e305_ERA_FCST
+       - 95159条数据
+       - 构造分子108个，drugbank分子1712个
+       - 计算泛函：PBEPBE, BLYP, bhanfhlyp, LC-blyp, CAM-B3LYP, M06, M06-2x, wb97xd
+       - 计算基组：6-31G, 6-31G*, 6-31+G* (主要此3个)      
+     - _media_yingjin_51ad96af-a542-4f7a-9b9c-13075136e305_ERA_work1_20201129
+       - 上述结果的补充
+       - 4672条数据
+   - **溶液体系，包含基态、激发态（计算机科学2022）**
+     - _work1_scquant_REM_AI-HPC
+       - 12704条数据
+       - 基态及激发态计算
+   - **P38蛋白体系（JCC2023）**
+     - _work1_scquant_ParaEngine-git-QCs
+       - 6355条数据
+       - P38体系及新冠体系的测试计算
+     - _work1_scquant_ParaEngine-git-Gaussian
+       - 34087条数据
+       - 包含695个分片/分子/氨基酸残基
+       - 计算方案包括 M062x-631gss, CAMB3LYP-631gss, wB97XD-631gss, CAMB3LYP-631gss, MP2 等
+   - **新冠蛋白分片计算结果(JCC2023)**
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_M062x-631Gs-8A
+       - 95103条数据
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_M062x_631Gss-GD3-12A
+       - 227015条数据
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_M062x_631Gss-scfqc-12A
+       - 12948条数据
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_MP2_631gss-12A
+       - 13696条数据
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_wb97xd-6311gss-12A
+       - 78088条数据
+     - _work1_scquant_ParaEngine-git-COVID2019_Results_wb97xd-631Gss-12A
+       - 144392条数据
+   
+
 ## data_gaussian format 
 
-- 33  0  1212.8  0  test10_dimer_6-10  23  52.7304347826087  2097152000  6-31+G(d)  [233, 233]  E(RM062X)  [44, 44]  ['-0.163382237580', '-0.195054172598', '-0.007470856512', '-0.004745264700', '-0.000085862482', '-0.000008659366', '-0.000001045323', '-0.000000135890', '-0.000000020508', '-0.000000003290', '-0.000000000344', '-0.000000000080', '-0.000000000026', '0.000000000008']  [ Machine: ERA Package: G16  NPROCS: 24 Charge: 0 Multi: 1 PARAMETERS: #p m062x/6-31+g* TD pop=full nosym ]  [ HOMO: -0.311  LUMO:-0.01603 ] [ TDINFO:  Excited State   1:      Singlet-?Sym    3.9460 eV  314.20 nm  f=0.0007  <S\*\*2>=0.000 |  Excited State   2:      Singlet-?Sym    4.5410 eV  273.04 nm  f=0.0002  <S\*\*2>=0.000 |  Excited State   3:      Singlet-?Sym    5.0568 eV  245.18 nm  f=0.0039  <S\*\*2>=0.000 ] [ 23 :  O  0.213  1.985  2.213  H  0.014  2.487  3.007  H  0.87  1.314  2.415  O  6.659  2.267  -0.592  O  5.346  0.449  -0.34  O  8.416  2.578  4.165  N  6.878  -0.926  1.271  N  6.405  2.622  5.247  C  7.354  0.362  0.837  C  7.758  1.165  2.035  C  6.673  1.416  3.014  C  6.412  1.027  -0.055  C  7.224  2.219  4.136  H  7.018  2.415  -1.547  H  7.092  -1.668  0.544  H  5.822  -0.881  1.368  H  5.788  3.439  5.092  H  6.471  2.079  6.136  H  8.298  0.177  0.246  H  8.182  2.138  1.72  H  8.576  0.605  2.543  H  6.221  0.514  3.446  H  5.851  2.004  2.539   ] [ 1\1\GINC-C5441\SP\RM062X TD-FC\6-31+G(d)\C5H12N2O4\SCQUANT\16-Dec-2020\0 ] [ Version=ES64L-G09RevE.01\HF=-607.8502647\RMSD=5.734e-09\PG=C01 [X(C5H12N2O4)] ] /work1/scquant/REM_AI-HPC/model1_TDDFT/test10.pdb_GAU/test10_dimer_6-10.log
+- 233  0  1212.8  0  test10_dimer_6-10  23  52.7304347826087  2097152000  6-31+G(d)  [233, 233]  E(RM062X)  [44, 44]  ['-0.163382237580', '-0.195054172598', '-0.007470856512', '-0.004745264700', '-0.000085862482', '-0.000008659366', '-0.000001045323', '-0.000000135890', '-0.000000020508', '-0.000000003290', '-0.000000000344', '-0.000000000080', '-0.000000000026', '0.000000000008']  [ Machine: ERA Package: G16  NPROCS: 24 Charge: 0 Multi: 1 PARAMETERS: #p m062x/6-31+g* TD pop=full nosym ]  [ HOMO: -0.311  LUMO:-0.01603 ] [ TDINFO:  Excited State   1:      Singlet-?Sym    3.9460 eV  314.20 nm  f=0.0007  <S\*\*2>=0.000 |  Excited State   2:      Singlet-?Sym    4.5410 eV  273.04 nm  f=0.0002  <S\*\*2>=0.000 |  Excited State   3:      Singlet-?Sym    5.0568 eV  245.18 nm  f=0.0039  <S\*\*2>=0.000 ] [ 23 :  O  0.213  1.985  2.213  H  0.014  2.487  3.007  H  0.87  1.314  2.415  O  6.659  2.267  -0.592  O  5.346  0.449  -0.34  O  8.416  2.578  4.165  N  6.878  -0.926  1.271  N  6.405  2.622  5.247  C  7.354  0.362  0.837  C  7.758  1.165  2.035  C  6.673  1.416  3.014  C  6.412  1.027  -0.055  C  7.224  2.219  4.136  H  7.018  2.415  -1.547  H  7.092  -1.668  0.544  H  5.822  -0.881  1.368  H  5.788  3.439  5.092  H  6.471  2.079  6.136  H  8.298  0.177  0.246  H  8.182  2.138  1.72  H  8.576  0.605  2.543  H  6.221  0.514  3.446  H  5.851  2.004  2.539   ] [ 1\1\GINC-C5441\SP\RM062X TD-FC\6-31+G(d)\C5H12N2O4\SCQUANT\16-Dec-2020\0 ] [ Version=ES64L-G09RevE.01\HF=-607.8502647\RMSD=5.734e-09\PG=C01 [X(C5H12N2O4)] ] /work1/scquant/REM_AI-HPC/model1_TDDFT/test10.pdb_GAU/test10_dimer_6-10.log
 
   - **Section-1  (Fcst / time_prediction / 机时预测)**
     - ref from https://github.com/yingjin-ma/Fcst_sys_public/edit/main/database/rawdata/README.md    格式同ACSOmega已发表工作
