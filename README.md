@@ -1,5 +1,5 @@
-# biomed-QCdriver
-Quantum Chemical full process for BIOMED platform
+# chembiomed platform
+Quantum Chemical full process for CHEMBIOMED platform
 
 ## 2023.1.6更新
 
