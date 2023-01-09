@@ -1,5 +1,79 @@
-# Readme sections
+# Readme 
+## data_gaussian format 
 
+- 33  0  1212.8  0  test10_dimer_6-10  23  52.7304347826087  2097152000  6-31+G(d)  [233, 233]  E(RM062X)  [44, 44]  ['-0.163382237580', '-0.195054172598', '-0.007470856512', '-0.004745264700', '-0.000085862482', '-0.000008659366', '-0.000001045323', '-0.000000135890', '-0.000000020508', '-0.000000003290', '-0.000000000344', '-0.000000000080', '-0.000000000026', '0.000000000008']  [ Machine: ERA Package: G16  NPROCS: 24 Charge: 0 Multi: 1 PARAMETERS: #p m062x/6-31+g* TD pop=full nosym ]  [ HOMO: -0.311  LUMO:-0.01603 ] [ TDINFO:  Excited State   1:      Singlet-?Sym    3.9460 eV  314.20 nm  f=0.0007  <S\*\*2>=0.000 |  Excited State   2:      Singlet-?Sym    4.5410 eV  273.04 nm  f=0.0002  <S\*\*2>=0.000 |  Excited State   3:      Singlet-?Sym    5.0568 eV  245.18 nm  f=0.0039  <S\*\*2>=0.000 ] [ 23 :  O  0.213  1.985  2.213  H  0.014  2.487  3.007  H  0.87  1.314  2.415  O  6.659  2.267  -0.592  O  5.346  0.449  -0.34  O  8.416  2.578  4.165  N  6.878  -0.926  1.271  N  6.405  2.622  5.247  C  7.354  0.362  0.837  C  7.758  1.165  2.035  C  6.673  1.416  3.014  C  6.412  1.027  -0.055  C  7.224  2.219  4.136  H  7.018  2.415  -1.547  H  7.092  -1.668  0.544  H  5.822  -0.881  1.368  H  5.788  3.439  5.092  H  6.471  2.079  6.136  H  8.298  0.177  0.246  H  8.182  2.138  1.72  H  8.576  0.605  2.543  H  6.221  0.514  3.446  H  5.851  2.004  2.539   ] [ 1\1\GINC-C5441\SP\RM062X TD-FC\6-31+G(d)\C5H12N2O4\SCQUANT\16-Dec-2020\0 ] [ Version=ES64L-G09RevE.01\HF=-607.8502647\RMSD=5.734e-09\PG=C01 [X(C5H12N2O4)] ] /work1/scquant/REM_AI-HPC/model1_TDDFT/test10.pdb_GAU/test10_dimer_6-10.log
+
+  - **Section-1  (Fcst / time_prediction / 机时预测)**
+    - ref from https://github.com/yingjin-ma/Fcst_sys_public/edit/main/database/rawdata/README.md    格式同ACSOmega已发表工作
+    - 233  0  1212.8  0  test10_dimer_6-10  23  52.7304347826087  2097152000  6-31+G(d)  [233, 233]  E(RM062X)  [44, 44]  ['-0.163382237580', '-0.195054172598', '-0.007470856512', '-0.004745264700', '-0.000085862482', '-0.000008659366', '-0.000001045323', '-0.000000135890', '-0.000000020508', '-0.000000003290', '-0.000000000344', '-0.000000000080', '-0.000000000026', '0.000000000008']
+      - 233 -- 基组总数目 ***(Used in training)***
+      - 0 -- Not used yet
+      - 1212.8 -- 计算时间 (seconds)  ***(Used in training)***
+      - 0 -- Not used yet 
+      - test10_dimer_6-10 --  *** Gaussin输入文件名 ***
+      - 23 -- 自洽常迭代数目
+      - 52.7304347826087 -- 每次迭代时间 (seconds)
+      - 2097152000 -- (MEM? need to check)
+      - 6-31+G(d) -- 计算基组
+      - [233, 233] -- 每个不可约表示的基组数目 
+      - E(RM062X) -- 计算方法
+      - [44, 44] -- (need to check) 
+      - ['-0.163382237580', '-0.195054172598', '-0.007470856512', '-0.004745264700', '-0.000085862482', '-0.000008659366', '-0.000001045323', '-0.000000135890', '-0.000000020508', '-0.000000003290', '-0.000000000344', '-0.000000000080', '-0.000000000026', '0.000000000008'] -- 每次迭代的能量变化值
+
+  - **Section-2  (Basic info. / 基本信息 )**
+    - Within [], start with **Machine**  / 中括号内，关键字 **Machine** 
+    - [ Machine: ERA Package: G16  NPROCS: 24 Charge: 0 Multi: 1 PARAMETERS: #p m062x/6-31+g* TD pop=full nosym ]
+      - Machine: ERA  
+      - Package: G16
+      - NPROCS: 24
+      - Charge: 0
+      - Multi: 1
+      - PARAMETERS: #p m062x/6-31+g* TD pop=full nosym 
+   
+   - **Section-3  (HOMO LUMO / 前线轨道 )**
+     - [ HOMO: -0.311  LUMO:-0.01603 ]
+    
+   - **Section-4  (TD informations / 激发态信息 )** 
+     - Within [], start with **TDINFO**  / 中括号内，关键字 **TDINFO**
+     - [ TDINFO:  Excited State   1:      Singlet-?Sym    3.9460 eV  314.20 nm  f=0.0007  <S\*\*2>=0.000 |  Excited State   2:      Singlet-?Sym    4.5410 eV  273.04 nm  f=0.0002  <S\*\*2>=0.000 |  Excited State   3:      Singlet-?Sym    5.0568 eV  245.18 nm  f=0.0039  <S\*\*2>=0.000 ]
+       - TDINFO: 
+       - Excited State   1:    -- 第1激发态  
+       - Singlet-?Sym          -- 单三态、对称性信息
+       - 3.9460 eV             -- 激发能  
+       - 314.20 nm             -- 激发波数  
+       - f=0.0007              -- 振子强度
+       - <S\*\*2>=0.000        -- 自旋信息
+      
+    - **Section-5  (Geometry / 构型信息 )** 
+      - Within [], start with **NUM :**  / 中括号内，关键字 **NUM(原子数目) :**
+      - [ 23 :  O  0.213  1.985  2.213  H  0.014  2.487  3.007  H  0.87  1.314  2.415  O  6.659  2.267  -0.592  O  5.346  0.449  -0.34  O  8.416  2.578  4.165  N  6.878  -0.926  1.271  N  6.405  2.622  5.247  C  7.354  0.362  0.837  C  7.758  1.165  2.035  C  6.673  1.416  3.014  C  6.412  1.027  -0.055  C  7.224  2.219  4.136  H  7.018  2.415  -1.547  H  7.092  -1.668  0.544  H  5.822  -0.881  1.368  H  5.788  3.439  5.092  H  6.471  2.079  6.136  H  8.298  0.177  0.246  H  8.182  2.138  1.72  H  8.576  0.605  2.543  H  6.221  0.514  3.446  H  5.851  2.004  2.539   ]
+        - 23 : -- 原子总数目
+        - O  0.213  1.985  2.213  -- 元素符号, x坐标, y坐标, z坐标
+        
+     - **Section-6  (Gaussian-part1 / 高斯总结信息1 )**     
+       - Within [], contents are separated with **\\**  / 中括号内, 内容通过反斜杠分隔
+       - [ 1\1\GINC-C5441\SP\RM062X TD-FC\6-31+G(d)\C5H12N2O4\SCQUANT\16-Dec-2020\0 ]
+         - 1\1\ -- 
+         - GINC-C5441 -- 计算机器名称
+         - SP -- 计算类型, 此处为SP(Single Point)单点计算
+         - RM062X TD-FC -- 计算泛函(RM062X, 注意R为闭壳层意思) 计算方法(TD-FC, Time-Dependent Frank-Condon 激发)
+         - 6-31+G(d) -- 基组
+         - C5H12N2O4 -- 分子元素构成
+         - SCQUANT -- 任务计算用户名
+         - 16-Dec-2020 -- 计算时间 
+     
+     - **Section-7  (Gaussian-part2 / 高斯总结信息2 )**     
+       - Within [], contents are separated with **\\**  / 中括号内, 内容通过反斜杠分隔
+       - [ Version=ES64L-G09RevE.01\HF=-607.8502647\RMSD=5.734e-09\PG=C01 [X(C5H12N2O4)] ]
+         - Version=ES64L-G09RevE.01 -- Gaussian版本
+         - HF=-607.8502647 -- 体系能量值
+         - RMSD -- 均方根误差
+         - Dipole=0.327971,-2.1120592,0.0933191 -- 偶极距
+         - Quadrupole=-6.6345648,11.2750699,-4.6405051,11.3518393,-1.6737339,4.2125752 -- 四极距
+         
+     - **Section-8  (原始计算输出文件)**    
+       - 原始计算输出文件的绝对路径
+       - /work1/scquant/REM_AI-HPC/model1_TDDFT/test10.pdb_GAU/test10_dimer_6-10.log
 
 # Discussions sections
     -- Discussions for chembiomed platform
